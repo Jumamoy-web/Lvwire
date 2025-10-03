@@ -4,13 +4,14 @@ use Illuminate\Support\Facades\Route;
 use App\Livewire\Settings\Appearance;
 use App\Livewire\Settings\Password;
 use App\Livewire\Settings\Profile;
-use App\Livewire\Users\Table;
+use App\Livewire\Post\Table;
 
 
-Route::get('/users', Table::class)->name('users.index');
+
+Route::get('/post', Table::class)->name('post.index');
 
 
-Route::get('/', function () {   
+Route::get('/', function () {       
     return view('welcome');
 })->name('home');
 
